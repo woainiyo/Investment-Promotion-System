@@ -76,3 +76,7 @@ logs/
 *.md
 !.gitignore
 !Readme.md
+diagnose_map_api.js
+test_chat_api.js
+test_login.js 
+test_suggestion_simple.js
