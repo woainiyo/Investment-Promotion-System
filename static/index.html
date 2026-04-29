@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静态资源测试页面</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .info {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e8f4fd;
+            border-left: 4px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 静态资源托管成功！</h1>
+        
+        <div class="info">
+            <p><strong>项目名称：</strong>Beshe 后端系统</p>
+            <p><strong>静态资源路径：</strong>/static/</p>
+            <p><strong>访问方式：</strong>http://localhost:3000/static/index.html</p>
+        </div>
+
+        <p>这个页面通过 Express 的静态资源托管功能提供服务。</p>
+        <p>您可以在 <code>static</code> 目录下放置任何静态文件，如：</p>
+        <ul>
+            <li>HTML 文件</li>
+            <li>CSS 样式表</li>
+            <li>JavaScript 文件</li>
+            <li>图片 (PNG, JPG, GIF 等)</li>
+            <li>字体文件</li>
+        </ul>
+
+        <div class="test-container">
+            <h3>✅ CSS 和 JavaScript 测试</h3>
+            <p>如果看到这个绿色背景的容器，说明CSS文件加载成功！</p>
+            <button onclick="testStaticResource()">点击测试JavaScript</button>
+        </div>
+
+        <p><em>注意：静态资源不需要 JWT 认证，可以被任意用户访问。</em></p>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

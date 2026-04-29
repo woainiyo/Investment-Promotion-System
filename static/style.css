@@ -1,0 +1,18 @@
+/* 测试CSS文件 */
+.test-container {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.test-image {
+    width: 100px;
+    height: 100px;
+    background-color: #FF9800;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+}
